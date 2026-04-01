@@ -26,9 +26,9 @@ const Positions = () => {
                 {post.tags.map((tag, index) => (
                   <div
                     key={index}
-                    className="px-6 py-2 border-1 border-[#84143C] group-hover:border-white rounded-full w-fit h-fit"
+                    className="px-6 py-2 border border-[#84143C] group-hover:border-white rounded-full w-fit h-fit"
                   >
-                    <p className="group-hover:text-white font-manrope-regular text-[16px]">
+                    <p className="text-[#84143C] group-hover:text-white font-manrope-semibold text-[16px]">
                       {tag}
                     </p>
                   </div>
