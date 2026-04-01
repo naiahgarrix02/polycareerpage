@@ -35,19 +35,18 @@ const Positions = () => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-row items-start gap-4">
-              <a
-                href=""
-                className="font-manrope-semibold text-[32px] text-black group-hover:text-white hover:underline"
-              >
-                Apply
-              </a>
-              <img
-                src="/arrowup.svg"
-                alt="arrow"
-                className="group-hover:invert"
-              />
-            </div>
+            <a href="">
+              <div className="flex flex-row items-start gap-4">
+                <p className="font-manrope-semibold text-[32px] text-black group-hover:text-white hover:underline">
+                  Apply
+                </p>
+                <img
+                  src="/arrowup.svg"
+                  alt="arrow"
+                  className="group-hover:invert"
+                />
+              </div>
+            </a>
           </div>
         ))}
       </div>
