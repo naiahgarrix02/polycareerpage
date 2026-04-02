@@ -2,7 +2,7 @@ import { postitions } from "../constants"
 
 const Positions = () => {
   return (
-    <div className="md:px-40 px-4">
+    <div className="lg:px-40 md:px-12 px-4">
       <h2 className="font-manrope-bold md:text-[32px] text-[24px] text-[#1B2558] mt-20 md:mb-9 mb-3">
         Open Positions
       </h2>
@@ -11,7 +11,7 @@ const Positions = () => {
         {postitions.map((post) => (
           <div
             key={post.title}
-            className="group flex md:flex-row flex-col md:gap-9 gap-14 md:p-12 p-4 justify-between cursor-pointer hover:bg-[#84143C] transition-colors border-b border-[#a5a5a5]"
+            className="group flex md:flex-row flex-col md:gap-9 md:gap-20 gap-14 lg:p-12 md:p-8 p-4 justify-between cursor-pointer hover:bg-[#84143C] transition-colors border-b border-[#a5a5a5]"
           >
             <div className="flex flex-col gap-9">
               <div className="flex flex-col gap-6">
@@ -37,13 +37,13 @@ const Positions = () => {
             </div>
             <a href="">
               <div className="flex flex-row items-start md:gap-4 gap-2">
-                <p className="font-manrope-semibold md:text-[32px] text-[24px] text-black group-hover:text-white hover:underline">
+                <p className="font-manrope-semibold lg:text-[32px] text-[24px] text-black group-hover:text-white hover:underline">
                   Apply
                 </p>
                 <img
                   src="/arrowup.svg"
                   alt="arrow"
-                  className="group-hover:invert"
+                  className="group-hover:invert w-8 h-8 lg:w-full lg:h-full"
                 />
               </div>
             </a>
