@@ -17,7 +17,7 @@ const PositionDetails = () => {
 
   return (
     <div className="lg:px-40 md:px-12 px-4 md:mt-25 mt-16">
-      <div>
+      <div className="flex flex-col gap-1">
         <p className="font-manrope-regular md:text-[20px] text-[16px] text-[#BC909F]">
           Polymorph Labs Careers
         </p>
@@ -26,11 +26,11 @@ const PositionDetails = () => {
             {position.title}
           </h1>
 
-          <p className="font-manrope-regular text-[16px] text-[#5F6376] w-3/5">
+          <p className="font-manrope-regular text-[16px] text-[#5F6376] md:w-3/5">
             {position.fulldesc}
           </p>
 
-          <div className="flex flex-row gap-4 flex-wrap items-center justify-between w-3/5">
+          <div className="flex flex-row gap-4 flex-wrap items-center justify-between md:w-3/5">
             <div className="flex flex-row gap-4 flex-wrap">
               {position.tags.map((tag, index) => (
                 <div
@@ -43,15 +43,15 @@ const PositionDetails = () => {
                 </div>
               ))}
             </div>
-            <a href="">
-              <button className="px-6 py-3 bg-[#84143C] text-white font-manrope-semibold rounded-full hover:bg-[#6d1032] transition-colors duration-300">
+            <a href={`mailto:info@polymorphlabs.io?subject=Application for ${position.title}`}>
+              <button className="px-6 py-3 bg-[#84143C] cursor-pointer text-white font-manrope-semibold rounded-full hover:bg-[#6d1032] transition-colors duration-300 md:mt-0 mt-12">
                 Apply
               </button>
             </a>
           </div>
         </div>
 
-        <div className="flex flex-col gap-44 mt-12">
+        <div className="flex flex-col md:gap-44 gap-12 mt-12">
           <div>
             <h2 className="font-manrope-semibold md:text-[28px] text-[24px] text-[#1B2558] mb-4">
               What You'll Do
