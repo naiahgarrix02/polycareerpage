@@ -1,8 +1,8 @@
 const Header = () => {
   return (
-    <div className='flex flex-row w-full py-6 px-40 gap-[280px] items-center'>
+    <div className='flex flex-row w-full py-6 md:px-40 px-6 gap-[280px] items-center'>
         <img src='/logo.svg' alt='Logo' />
-        <div className='gap-[64px] w-2/3 flex flex-row items-center'>
+        <div className='gap-[64px] w-2/3 flex flex-row items-center md:block hidden'>
             <a className='font-manrope-regular text-[16px] text-gray-800 hover:text-blue-500' href='#'>Home</a>
             <a className='font-manrope-regular text-[16px] text-gray-800 hover:text-blue-500' href='#'>About Us</a>
             <a className='font-manrope-regular text-[16px] text-gray-800 hover:text-blue-500' href='#'>Services</a>
