@@ -11,7 +11,7 @@ const Positions = () => {
         {postitions.map((post) => (
           <div
             key={post.title}
-            className="group flex md:flex-row flex-col lg:gap-9 md:gap-20 gap-14 lg:p-12 md:p-8 p-4 justify-between cursor-pointer hover:bg-[#84143C] transition-colors border-b border-[#a5a5a5]"
+            className="group flex md:flex-row flex-col lg:gap-9 md:gap-20 gap-14 lg:p-12 md:p-8 p-4 justify-between cursor-pointer hover:translate-y-1 hover:bg-[#84143C] transition-colors duration-300 ease-out border-b border-[#a5a5a5]"
           >
             <div className="flex flex-col gap-9">
               <div className="flex flex-col gap-6">
@@ -36,7 +36,7 @@ const Positions = () => {
               </div>
             </div>
             <a href="">
-              <div className="flex flex-row items-start md:gap-4 gap-2">
+              <div className="flex flex-row items-start md:gap-4 gap-2 transform transition-all duration-300 group-hover:translate-x-2">
                 <p className="font-manrope-semibold lg:text-[32px] text-[24px] text-black group-hover:text-white hover:underline">
                   Apply
                 </p>
